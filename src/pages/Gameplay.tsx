@@ -54,13 +54,13 @@ const Gameplay = () => (
         </p>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { name: "Broken Pickaxe", color: "destructive" },
-            { name: "Smashed Lantern", color: "destructive" },
-            { name: "Repair Kit", color: "success" },
-            { name: "Map Peek", color: "accent" },
+            { name: "Broken Pickaxe", dot: "bg-destructive" },
+            { name: "Smashed Lantern", dot: "bg-destructive" },
+            { name: "Repair Kit", dot: "bg-success" },
+            { name: "Map Peek", dot: "bg-accent" },
           ].map((c, i) => (
             <div key={i} className="rounded-xl border border-border bg-card/60 backdrop-blur p-4">
-              <div className={`w-2 h-2 rounded-full bg-${c.color} mb-2`} />
+              <div className={`w-2 h-2 rounded-full mb-2 ${c.dot}`} />
               <p className="font-display text-sm">{c.name}</p>
             </div>
           ))}

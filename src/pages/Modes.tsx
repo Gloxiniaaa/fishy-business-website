@@ -77,16 +77,23 @@ const Modes = () => (
   </SiteLayout>
 );
 
-const PhaseCard = ({ icon: Icon, color, title, desc }: { icon: React.ComponentType<{ className?: string }>; color: string; title: string; desc: string }) => (
-  <div className="flex gap-4 items-start p-5 rounded-2xl bg-secondary/40 border border-border hover:border-primary/40 transition-colors">
-    <div className={`w-10 h-10 rounded-xl bg-${color}/15 border border-${color}/40 flex items-center justify-center shrink-0`}>
-      <Icon className={`w-5 h-5 text-${color}`} />
+const PhaseCard = ({ icon: Icon, color, title, desc }: { icon: React.ComponentType<{ className?: string }>; color: "primary" | "accent" | "destructive"; title: string; desc: string }) => {
+  const styles = {
+    primary: "bg-primary/15 border-primary/40 text-primary",
+    accent: "bg-accent/15 border-accent/40 text-accent",
+    destructive: "bg-destructive/15 border-destructive/40 text-destructive",
+  }[color];
+  return (
+    <div className="flex gap-4 items-start p-5 rounded-2xl bg-secondary/40 border border-border hover:border-primary/40 transition-colors">
+      <div className={`w-10 h-10 rounded-xl border flex items-center justify-center shrink-0 ${styles}`}>
+        <Icon className="w-5 h-5" />
+      </div>
+      <div>
+        <h4 className="font-display text-lg mb-1">{title}</h4>
+        <p className="text-sm text-muted-foreground">{desc}</p>
+      </div>
     </div>
-    <div>
-      <h4 className="font-display text-lg mb-1">{title}</h4>
-      <p className="text-sm text-muted-foreground">{desc}</p>
-    </div>
-  </div>
-);
+  );
+};
 
 export default Modes;
