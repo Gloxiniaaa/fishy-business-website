@@ -3,6 +3,9 @@ import { Mic, Sparkles, Music, Shirt, MessageCircle, Footprints } from "lucide-r
 import socialPiano from "@/assets/social-piano.png";
 import avatars from "@/assets/avatars.png";
 import emotes from "@/assets/emotes.png";
+import chrismas from "@/assets/chrismas.png";
+import ship from "@/assets/battle-ship.png";
+
 
 const Social = () => (
   <SiteLayout>
@@ -20,7 +23,7 @@ const Social = () => (
 
     <section className="container py-12">
       <div className="rounded-3xl overflow-hidden shadow-deep relative">
-        <img src={socialPiano} alt="Player at piano" loading="lazy" className="w-full" />
+        <img src={chrismas} alt="Player at piano" loading="lazy" className="w-full" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
         <div className="absolute bottom-8 left-8 right-8 md:bottom-12 md:left-12">
           <h2 className="font-display text-3xl md:text-5xl">The lobby is the game too</h2>
@@ -31,7 +34,7 @@ const Social = () => (
     <section className="container py-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
       {[
         { icon: Footprints, title: "Free Avatar Movement", desc: "Walk, run, sit, dance. Bump into other players. Form circles. Block doorways for laughs." },
-        { icon: Mic, title: "Voice Chat - Text chat", desc: "Talk to everyone in the game with voice support. Real conversations, real betrayal." },
+        { icon: Mic, title: "Voice Chat", desc: "Talk to everyone in the game with voice support. Real conversations, real betrayal." },
         { icon: Sparkles, title: "Emote Wheel", desc: "Quick reactions, dances, finger-pointing accusations. Pin your favorites for fast access." },
         { icon: Shirt, title: "Avatar Customization", desc: "Hats, jackets, glasses, animal forms. Build a character your friends will recognize across rooms." },
         { icon: Music, title: "Mini Activities", desc: "Play piano. Sit at the bar. Toss bottles. Down-time isn't dead time." },
@@ -70,6 +73,30 @@ const Social = () => (
           <div className="container max-w-xl">
             <h3 className="font-display text-3xl md:text-5xl  ">Wave. Dance. <span className="text-ember">Boxing.</span></h3>
             <p className="mt-4 text-muted-foreground">An expressive emote system designed to maximize chaos at the table.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="container pb-20">
+      <div className="rounded-3xl overflow-hidden relative">
+        <img src={socialPiano} alt="Emotes party" loading="lazy" className="w-full max-h-[400px] object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent flex items-center">
+          <div className="container max-w-xl">
+            <h3 className="font-display text-3xl md:text-5xl  ">Skillful <span className="text-ember">Pianist.</span></h3>
+            <p className="mt-4 text-muted-foreground">Shock your friends with your hidden talents</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section className="container pb-20">
+      <div className="rounded-3xl overflow-hidden relative">
+        <img src={ship} alt="Emotes party" loading="lazy" className="w-full max-h-[400px] object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent flex items-center">
+          <div className="container max-w-xl">
+            <h3 className="font-display text-3xl md:text-5xl  ">Battle <span className="text-ember">Ship</span></h3>
+            <p className="mt-4 text-muted-foreground">Or do you want to play boardgames amongst the breezes of the sea</p>
           </div>
         </div>
       </div>
