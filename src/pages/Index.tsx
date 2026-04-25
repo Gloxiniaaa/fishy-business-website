@@ -4,9 +4,10 @@ import { Play, Download, Users, Sparkles, MessageSquare, Vote, Music, ArrowRight
 import { Button } from "@/components/ui/button";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import heroTable from "@/assets/hero-table.jpg";
+import main from "@/assets/main.png";
 import gameplayCards from "@/assets/gameplay-cards.jpg";
 import sabotageImg from "@/assets/sabotage.jpg";
-import socialPiano from "@/assets/social-piano.jpg";
+import socialPiano from "@/assets/social-piano.png";
 import dayNight from "@/assets/day-night.jpg";
 import emotes from "@/assets/emotes.jpg";
 
@@ -25,10 +26,10 @@ const Index = () => {
         <div
           className="absolute inset-0 -z-0"
           style={{
-            backgroundImage: `url(${heroTable})`,
+            backgroundImage: `url(${main})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            transform: `translateY(${scrollY * 0.25}px) scale(1.1)`,
+            transform: `translateY(${scrollY * 0.25}px) scale(1)`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />

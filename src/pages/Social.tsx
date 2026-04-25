@@ -1,8 +1,8 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Mic, Sparkles, Music, Shirt, MessageCircle, Footprints } from "lucide-react";
-import socialPiano from "@/assets/social-piano.jpg";
-import avatars from "@/assets/avatars.jpg";
-import emotes from "@/assets/emotes.jpg";
+import socialPiano from "@/assets/social-piano.png";
+import avatars from "@/assets/avatars.png";
+import emotes from "@/assets/emotes.png";
 
 const Social = () => (
   <SiteLayout>
@@ -56,7 +56,7 @@ const Social = () => (
           Hundreds of cosmetic combinations. From graduation caps to pirate hats, hoodies to capes. Earn new pieces by winning rounds — or by losing them gracefully.
         </p>
         <div className="grid grid-cols-3 gap-3">
-          {["Hats", "Tops", "Bottoms", "Shoes", "Eyewear", "Pets"].map(c => (
+          {["Hats", "Tops", "Bottoms", "Shoes", "Eyewear", "Gloves"].map(c => (
             <div key={c} className="rounded-xl bg-secondary/60 border border-border p-4 text-center text-sm font-medium hover:border-primary/60 hover:text-primary transition-colors cursor-default">{c}</div>
           ))}
         </div>
@@ -68,7 +68,7 @@ const Social = () => (
         <img src={emotes} alt="Emotes party" loading="lazy" className="w-full max-h-[400px] object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent flex items-center">
           <div className="container max-w-xl">
-            <h3 className="font-display text-3xl md:text-5xl">Wave. Dance. <span className="text-ember">Point fingers.</span></h3>
+            <h3 className="font-display text-3xl md:text-5xl  ">Wave. Dance. <span className="text-ember">Boxing.</span></h3>
             <p className="mt-4 text-muted-foreground">An expressive emote system designed to maximize chaos at the table.</p>
           </div>
         </div>

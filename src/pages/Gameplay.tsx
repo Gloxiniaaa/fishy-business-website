@@ -39,6 +39,8 @@ import {
 } from "@/components/ui/tooltip";
 import pathCards from "@/assets/path-cards.jpg";
 import sabotageImg from "@/assets/sabotage.jpg";
+import board from "@/assets/board.png";
+import actionCards from "@/assets/action-cards.png";
 import gameplayCards from "@/assets/gameplay-cards.jpg";
 
 /* ----------------------------- Reusable bits ----------------------------- */
@@ -392,7 +394,7 @@ const pathTypes = [
 const PathCards = () => (
   <section className="container py-16">
     <div className="grid lg:grid-cols-2 gap-12 items-center">
-      <img src={pathCards} alt="Path cards laid on a wooden table" loading="lazy" className="rounded-3xl shadow-deep" />
+      <img src={board} alt="Path cards laid on a wooden table" loading="lazy" className="rounded-3xl shadow-deep" />
       <div>
         <SectionHeading index="05" kicker="Card type 01" title="Path" accent="cards">
           Used to build the tunnel from Start toward the Goals. Placement is strict — one bad
@@ -469,7 +471,7 @@ const ActionCards = () => (
     <section className="container py-16">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <div className="lg:order-2">
-          <img src={sabotageImg} alt="Action cards including sabotage and repair" loading="lazy" className="rounded-3xl shadow-deep" />
+          <img src={actionCards} alt="Action cards including sabotage and repair" loading="lazy" className="rounded-3xl shadow-deep" />
         </div>
         <div className="lg:order-1">
           <SectionHeading index="06" kicker="Card type 02" title="Action" accent="cards">

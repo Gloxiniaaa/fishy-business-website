@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import heroTable from "@/assets/hero-table.jpg";
 import gameplayCards from "@/assets/gameplay-cards.jpg";
 import sabotageImg from "@/assets/sabotage.jpg";
-import socialPiano from "@/assets/social-piano.jpg";
-import avatars from "@/assets/avatars.jpg";
+import socialPiano from "@/assets/social-piano.png";
+import avatars from "@/assets/avatars.png";
 import dayNight from "@/assets/day-night.jpg";
 import emotes from "@/assets/emotes.jpg";
 import pathCards from "@/assets/path-cards.jpg";
@@ -35,18 +35,18 @@ const Gallery = () => (
 
     {/* Trailer */}
     <section className="container py-10">
-      <div className="relative rounded-3xl overflow-hidden shadow-deep aspect-video group cursor-pointer">
-        <img src={heroTable} alt="Trailer cover" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-ember flex items-center justify-center shadow-ember group-hover:scale-110 transition-transform animate-pulse-glow">
-            <Play className="w-10 h-10 md:w-14 md:h-14 text-primary-foreground ml-1.5" fill="currentColor" />
-          </div>
-        </div>
-        <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10">
-          <p className="text-xs uppercase tracking-widest text-accent font-bold">Official Trailer</p>
-          <h3 className="font-display text-2xl md:text-4xl mt-1">Fishy Business — Reveal</h3>
-        </div>
+      <div className="relative rounded-3xl overflow-hidden shadow-deep aspect-video group">
+        <iframe
+          src="https://www.youtube.com/embed/MzUZRExQEVw"
+          title="Fishy Business — Reveal Trailer"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          className="w-full h-full"
+        />
+      </div>
+      <div className="mt-4 md:mt-6 md:px-2">
+        <p className="text-xs uppercase tracking-widest text-accent font-bold">Official Trailer</p>
+        <h3 className="font-display text-2xl md:text-4xl mt-1">Fishy Business — Reveal</h3>
       </div>
     </section>
 
