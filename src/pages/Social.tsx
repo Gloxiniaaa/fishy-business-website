@@ -31,7 +31,7 @@ const Social = () => (
     <section className="container py-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
       {[
         { icon: Footprints, title: "Free Avatar Movement", desc: "Walk, run, sit, dance. Bump into other players. Form circles. Block doorways for laughs." },
-        { icon: Mic, title: "Proximity Voice Chat", desc: "Whisper to one player, shout to the room. Distance changes volume — perfect for secret deals." },
+        { icon: Mic, title: "Voice Chat - Text chat", desc: "Talk to everyone in the game with voice support. Real conversations, real betrayal." },
         { icon: Sparkles, title: "Emote Wheel", desc: "Quick reactions, dances, finger-pointing accusations. Pin your favorites for fast access." },
         { icon: Shirt, title: "Avatar Customization", desc: "Hats, jackets, glasses, animal forms. Build a character your friends will recognize across rooms." },
         { icon: Music, title: "Mini Activities", desc: "Play piano. Sit at the bar. Toss bottles. Down-time isn't dead time." },

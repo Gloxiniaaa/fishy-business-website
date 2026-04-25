@@ -61,7 +61,7 @@ const Index = () => {
               </Button>
             </div>
             <div className="mt-12 flex flex-wrap gap-x-10 gap-y-3 text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.65s" }}>
-              <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-success" /> Cross-platform voice chat</div>
+              <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-success" /> Voice chat - Text chat</div>
               <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent" /> 3D avatar movement</div>
               <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary" /> Hidden roles & sabotage</div>
             </div>
@@ -111,7 +111,7 @@ const Index = () => {
               { icon: Users, title: "Multiplayer Chaos", desc: "3–8 players around the same wooden table. Shenanigans guaranteed." },
               { icon: Eye, title: "Hidden Roles", desc: "Diggers, saboteurs, and the occasional secret traitor. Find out who's lying." },
               { icon: Vote, title: "Day & Night Voting", desc: "Argue in daylight, accuse at night. Eject the suspect — or the wrong friend." },
-              { icon: MessageSquare, title: "Proximity Voice Chat", desc: "Whisper deals, shout accusations. Real voices, real betrayal." },
+              { icon: MessageSquare, title: "Voice Chat - Text chat", desc: "Chat, whisper deals, shout accusations. Real voices, real betrayal." },
               { icon: Sparkles, title: "Emotes & Avatars", desc: "Dance, laugh, point fingers. Customize a character that's unmistakably you." },
               { icon: Music, title: "Mini Activities", desc: "Play piano, sit at the bar, fish off the dock between rounds." },
             ].map((f, i) => (
@@ -195,7 +195,7 @@ const Index = () => {
             <ul className="mt-8 space-y-4">
               {[
                 { icon: Users, text: "Real-time avatar movement around a shared 3D space" },
-                { icon: MessageSquare, text: "Proximity voice — closer means louder" },
+                { icon: MessageSquare, text: "Voice chat with all players" },
                 { icon: Skull, text: "Party game energy with social deduction depth" },
                 { icon: Wrench, text: "Built-in mini activities so the lobby is never boring" },
               ].map((item, i) => (
