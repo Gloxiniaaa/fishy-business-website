@@ -1,8 +1,15 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { GraduationCap, Code2, Network, Palette, Music, Heart } from "lucide-react";
 import logo from "@/assets/logo.png";
-
+const getInitials = (name) => {
+  return name
+    .split(" ")
+    .map(word => word[0])
+    .join("")
+    .toUpperCase();
+};
 const About = () => (
+  
   <SiteLayout>
     <section className="relative pt-20 pb-12">
       <div className="container max-w-4xl text-center">
@@ -24,7 +31,7 @@ const About = () => (
           Our thesis question: <span className="text-accent">what happens when you fuse the two?</span> What if the cards lived on a real 3D table, in a warm wooden cabin, and the players could actually walk around, whisper, and make faces at each other?
         </p>
         <p>
-          Eighteen months, a few all-nighters, and one very patient supervisor later, here we are. Fishy Business is our love letter to social games — built as a graduation project, polished as something we hope you actually play.
+          Six months, a few all-nighters, and one very patient supervisor later, here we are. Fishy Business is our love letter to social games — built as a graduation project, polished as something we hope you actually play.
         </p>
       </div>
     </section>
@@ -35,12 +42,36 @@ const About = () => (
       <h2 className="font-display text-4xl md:text-5xl text-center mb-12">Under the <span className="text-gold">hood</span></h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         {[
-          { icon: Code2, title: "Unity 2022 LTS", desc: "URP rendering pipeline, custom toon shaders, low-poly asset workflow." },
-          { icon: Network, title: "Mirror Networking", desc: "Authoritative server with client-side prediction for movement and card placement." },
-          { icon: Music, title: "Steam Audio", desc: "Spatialized proximity voice chat — distance and walls actually matter." },
-          { icon: Palette, title: "Custom Card Engine", desc: "Data-driven card definitions so adding new sabotage types takes minutes, not hours." },
-          { icon: GraduationCap, title: "Academic Roots", desc: "Built as a Computer Science / Game Design thesis project at university." },
-          { icon: Heart, title: "Made With Coffee", desc: "Way too much of it. Genuinely. We have a problem." },
+          { 
+            icon: Code2, 
+            title: "Unity 6.0", 
+            desc: "Core engine powering the game with modern rendering, smooth performance, and scalable architecture." 
+          },
+          { 
+            icon: Network, 
+            title: "Netcode for GameObjects", 
+            desc: "Multiplayer foundation with authoritative host and synchronized gameplay across all players." 
+          },
+          { 
+            icon: Music, 
+            title: "Vivox Voice & Text Chat", 
+            desc: "Real-time voice and text communication — seamless interaction between players in every match." 
+          },
+          { 
+            icon: Palette, 
+            title: "Figma UI Design", 
+            desc: "All UI/UX flows are designed in Figma for clarity, consistency, and fast iteration." 
+          },
+          { 
+            icon: GraduationCap, 
+            title: "Game Development Focus", 
+            desc: "Built with a strong focus on gameplay systems, multiplayer interaction, and player experience." 
+          },
+          { 
+            icon: Heart, 
+            title: "Made With Passion", 
+            desc: "Crafted with dedication, late nights, and a lot of problem-solving along the way." 
+          },
         ].map((t, i) => (
           <div key={i} className="glow-card p-7">
             <div className="w-12 h-12 rounded-xl bg-secondary border border-border flex items-center justify-center mb-4">
@@ -56,17 +87,17 @@ const About = () => (
     {/* TEAM */}
     <section className="container pb-20">
       <p className="text-primary font-semibold uppercase tracking-widest text-xs mb-3 text-center">The Team</p>
-      <h2 className="font-display text-4xl md:text-5xl text-center mb-12">Four students, <span className="text-ember">one cabin</span></h2>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <h2 className="font-display text-4xl md:text-5xl text-center mb-12">Three students, <span className="text-ember">Three devs</span></h2>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {[
-          { name: "Alex", role: "Programming & Networking" },
-          { name: "Mira", role: "Game Design & Cards" },
-          { name: "Tobi", role: "3D Art & Animation" },
-          { name: "Jules", role: "Audio & UX" },
+          // { name: "Jules", role: "Audio & UX" },
+          { name: "Lê Ngọc Hiền", role: "2211024" },
+          { name: "Huỳnh Trần Học Đăng", role: "2210731" },
+          { name: "Nguyễn Mạnh Hùng", role: "2211337" },
         ].map((m, i) => (
           <div key={i} className="glow-card p-6 text-center">
-            <div className="w-20 h-20 rounded-full bg-ember mx-auto mb-4 flex items-center justify-center font-display text-3xl text-primary-foreground shadow-ember">
-              {m.name[0]}
+            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-ember mx-auto mb-4 flex items-center justify-center font-display text-3xl md:text-4xl text-primary-foreground shadow-ember">
+              {getInitials(m.name)}
             </div>
             <h3 className="font-display text-lg">{m.name}</h3>
             <p className="text-sm text-muted-foreground mt-1">{m.role}</p>
