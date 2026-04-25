@@ -15,12 +15,19 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        ember:
+          "bg-ember text-primary-foreground font-semibold shadow-ember hover:scale-[1.04] hover:-translate-y-0.5 transition-transform duration-300 [&_svg]:size-5",
+        gold:
+          "bg-gold text-accent-foreground font-semibold glow-gold hover:scale-[1.04] hover:-translate-y-0.5 transition-transform duration-300",
+        cabin:
+          "bg-secondary/80 backdrop-blur text-foreground border border-border hover:border-primary/60 hover:bg-secondary transition-all duration-300",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
-        icon: "h-10 w-10",
+        default: "h-11 px-5 py-2 rounded-full",
+        sm: "h-9 rounded-full px-4",
+        lg: "h-14 rounded-full px-8 text-base",
+        xl: "h-16 rounded-full px-10 text-lg",
+        icon: "h-10 w-10 rounded-full",
       },
     },
     defaultVariants: {
