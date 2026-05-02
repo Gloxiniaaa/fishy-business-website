@@ -23,7 +23,7 @@ export const SiteFooter = () => (
       <div>
         <h4 className="font-display text-base mb-4 text-foreground">Game</h4>
         <ul className="space-y-2.5 text-sm text-muted-foreground">
-          <li><Link to="/gameplay" className="hover:text-primary transition-colors">Gameplay</Link></li>
+          <li><Link to="/saboteur" className="hover:text-primary transition-colors">Saboteur Rules</Link></li>
           <li><Link to="/modes" className="hover:text-primary transition-colors">Game Modes</Link></li>
           <li><Link to="/social" className="hover:text-primary transition-colors">Social Hub</Link></li>
           <li><Link to="/gallery" className="hover:text-primary transition-colors">Media</Link></li>

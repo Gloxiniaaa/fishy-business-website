@@ -8,6 +8,7 @@ import bomb from "@/assets/bomb.png";
 import voiceIndicator from "@/assets/voice-indicator.png";
 import socialPiano from "@/assets/social-piano.png";
 import dayNight from "@/assets/night-phase.png";
+import saboteur from "@/assets/saboteur.png";
 
 const Index = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -68,6 +69,34 @@ const Index = () => {
 
         {/* Decorative glow */}
         <div className="absolute top-1/2 right-0 w-[500px] h-[500px] -translate-y-1/2 translate-x-1/3 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
+      </section>
+
+      {/* SABOTEUR REFERENCE */}
+      <section className="container py-28">
+        <div className="max-w-4xl mx-auto">
+          <div className="glow-card overflow-hidden">
+            <div className="grid lg:grid-cols-2 gap-8 items-center p-8 md:p-12">
+              <div className="aspect-video overflow-hidden rounded-2xl border border-border">
+                <img src={saboteur} alt="Saboteur board game" loading="lazy" className="w-full h-full object-cover" />
+              </div>
+              <div>
+                <p className="text-primary font-semibold uppercase tracking-widest text-xs mb-3">Inspired by</p>
+                <h2 className="font-display text-4xl md:text-5xl mb-4">
+                 <span className="text-ember">Saboteur</span>
+                </h2>
+                <p className="text-muted-foreground text-lg mb-6">
+                  Fishy Business is heavily inspired by the classic board game Saboteur. We've taken the timeless mechanics of hidden roles, path building, and deception — and brought them to life in 3D with real-time voice chat, dynamic avatars, and a social hangout space.
+                </p>
+                <p className="text-muted-foreground mb-6">
+                  Discover the complete ruleset and learn how to master the game of trust and betrayal.
+                </p>
+                <Button asChild size="lg">
+                  <Link to="/saboteur">Learn the Rules <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* GAMEPLAY PREVIEW */}

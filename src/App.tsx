@@ -4,7 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
-import Gameplay from "./pages/Gameplay.tsx";
+import Saboteur from "./pages/Saboteur.tsx";
 import Social from "./pages/Social.tsx";
 import Modes from "./pages/Modes.tsx";
 import Gallery from "./pages/Gallery.tsx";
@@ -22,7 +22,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/gameplay" element={<Gameplay />} />
+          <Route path="/saboteur" element={<Saboteur />} />
           <Route path="/social" element={<Social />} />
           <Route path="/modes" element={<Modes />} />
           <Route path="/gallery" element={<Gallery />} />

@@ -74,10 +74,10 @@ const Gallery = () => (
         ))}
       </div>
     </section>
-
+{/* 
     <section className="container py-20 text-center">
       <Button variant="ember" size="lg">Download Press Kit</Button>
-    </section>
+    </section> */}
   </SiteLayout>
 );
 

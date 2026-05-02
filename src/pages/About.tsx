@@ -44,7 +44,7 @@ const About = () => (
         {[
           { 
             icon: Code2, 
-            title: "Unity 6.0", 
+            title: "Unity 6", 
             desc: "Core engine powering the game with modern rendering, smooth performance, and scalable architecture." 
           },
           { 

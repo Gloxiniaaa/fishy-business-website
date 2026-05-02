@@ -780,7 +780,7 @@ const QuickTips = () => (
 
 /* ---------------------------------- Page ---------------------------------- */
 
-const Gameplay = () => (
+const Saboteur = () => (
   <SiteLayout>
     <PageHero />
     <Overview />
@@ -797,4 +797,4 @@ const Gameplay = () => (
   </SiteLayout>
 );
 
-export default Gameplay;
+export default Saboteur;
