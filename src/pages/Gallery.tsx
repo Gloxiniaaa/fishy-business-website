@@ -1,24 +1,35 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
-import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroTable from "@/assets/hero-table.jpg";
-import gameplayCards from "@/assets/gameplay-cards.jpg";
-import sabotageImg from "@/assets/sabotage.jpg";
-import socialPiano from "@/assets/social-piano.png";
+import main from "@/assets/main.png";
+import bomb from "@/assets/bomb.png";
 import avatars from "@/assets/avatars.png";
-import dayNight from "@/assets/day-night.jpg";
-import emotes from "@/assets/emotes.jpg";
-import pathCards from "@/assets/path-cards.jpg";
+import socialPiano from "@/assets/social-piano.png";
+import nightPhase from "@/assets/night-phase.png";
+import emotes from "@/assets/emotes.png";
+import board from "@/assets/board.png";
+import actionCards from "@/assets/action-cards.png";
+import chrismas from "@/assets/chrismas.png";
+import battleShip from "@/assets/battle-ship.png";
+import logo from "@/assets/logo.png";
+import voiceIndicator from "@/assets/voice-indicator.png";
+import reviveTool from "@/assets/ReviveTool.png";
+import binocular from "@/assets/Binocular.png";
 
 const shots = [
-  { src: heroTable, alt: "Players at the table", span: "md:col-span-2 md:row-span-2" },
-  { src: gameplayCards, alt: "Card placement" },
-  { src: sabotageImg, alt: "Sabotage moment" },
-  { src: socialPiano, alt: "Piano lobby", span: "md:col-span-2" },
+  { src: main, alt: "Main gameplay" },
+  { src: bomb, alt: "Sabotage moment", span: "md:col-span-2" },
   { src: avatars, alt: "Avatar customization" },
-  { src: dayNight, alt: "Day Night vote" },
-  { src: emotes, alt: "Emotes party", span: "md:col-span-2" },
-  { src: pathCards, alt: "Path cards top down" },
+  { src: socialPiano, alt: "Piano lobby", span: "md:col-span-2" },
+  { src: nightPhase, alt: "Night phase voting" },
+  { src: emotes, alt: "Emotes party" },
+  { src: binocular, alt: "Binoculars" },
+  { src: board, alt: "Game board" },
+  { src: actionCards, alt: "Action cards" },
+  { src: chrismas, alt: "Christmas theme" },
+  { src: battleShip, alt: "Battle ship mode" },
+  // { src: logo, alt: "Game logo" },
+  { src: voiceIndicator, alt: "Voice indicator" },
+  { src: reviveTool, alt: "Revive tool" },
 ];
 
 const Gallery = () => (

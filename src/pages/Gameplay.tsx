@@ -37,11 +37,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import pathCards from "@/assets/path-cards.jpg";
-import sabotageImg from "@/assets/sabotage.jpg";
 import board from "@/assets/board.png";
 import actionCards from "@/assets/action-cards.png";
-import gameplayCards from "@/assets/gameplay-cards.jpg";
 
 /* ----------------------------- Reusable bits ----------------------------- */
 

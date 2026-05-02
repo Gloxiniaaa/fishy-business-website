@@ -1,7 +1,7 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Sun, Moon, Vote, Users, MessageSquare, Skull, Trophy, Clock } from "lucide-react";
-import gameplayCards from "@/assets/gameplay-cards.jpg";
-import dayNight from "@/assets/day-night.jpg";
+import gameplayCards from "@/assets/ReviveTool.png";
+import dayNight from "@/assets/Binocular.png";
 
 const Modes = () => (
   <SiteLayout>

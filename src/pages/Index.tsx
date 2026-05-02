@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 import { Play, Download, Users, Sparkles, MessageSquare, Vote, Music, ArrowRight, Skull, Wrench, Eye, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteLayout } from "@/components/layout/SiteLayout";
-import heroTable from "@/assets/hero-table.jpg";
 import main from "@/assets/main.png";
-import gameplayCards from "@/assets/gameplay-cards.jpg";
-import sabotageImg from "@/assets/sabotage.jpg";
+import bomb from "@/assets/bomb.png";
+import voiceIndicator from "@/assets/voice-indicator.png";
 import socialPiano from "@/assets/social-piano.png";
-import dayNight from "@/assets/day-night.jpg";
-import emotes from "@/assets/emotes.jpg";
+import dayNight from "@/assets/night-phase.png";
 
 const Index = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -56,8 +54,8 @@ const Index = () => {
               <Button asChild variant="ember" size="xl" className="animate-pulse-glow">
                 <Link to="/download"><Download /> Play Now</Link>
               </Button>
-              <Button variant="cabin" size="xl">
-                <Play /> Watch Trailer
+              <Button asChild variant="cabin" size="xl" className="animate-pulse-glow">
+                <Link to="/Gallery"><Play /> Watch Trailer</Link>
               </Button>
             </div>
             <div className="mt-12 flex flex-wrap gap-x-10 gap-y-3 text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.65s" }}>
@@ -82,9 +80,9 @@ const Index = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { img: gameplayCards, title: "Place Path Cards", desc: "Build the route together — or quietly send it nowhere." },
-            { img: sabotageImg, title: "Sabotage", desc: "Break a tool. Block a player. Watch the chaos unfold." },
-            { img: emotes, title: "Read the Table", desc: "Body language, emotes, voice. The real game is people." },
+            { img: main, title: "Place Path Cards", desc: "Build the route together — or quietly send it nowhere." },
+            { img: voiceIndicator, title: "Read the Table", desc: "Body language, emotes, voice. The real game is people." },
+            { img: bomb, title: "Sabotage", desc: "Break a tool. Block a player. Or bomb a path. Watch the chaos unfold." },
           ].map((s, i) => (
             <div key={i} className="glow-card overflow-hidden group">
               <div className="aspect-[5/4] overflow-hidden">
@@ -140,7 +138,7 @@ const Index = () => {
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="glow-card overflow-hidden group">
             <div className="aspect-video overflow-hidden relative">
-              <img src={gameplayCards} alt="Classic mode" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={main} alt="Classic mode" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent" />
               <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-md border border-primary/40 text-primary text-xs font-bold tracking-wider uppercase flex items-center gap-1.5">
                 <Sun className="w-3.5 h-3.5" /> Classic

@@ -1,7 +1,7 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { Download as DownloadIcon, Cpu, HardDrive, MonitorSpeaker, Wifi, CheckCircle2 } from "lucide-react";
-import heroTable from "@/assets/hero-table.jpg";
+import heroTable from "@/assets/main.png";
 
 const Download = () => (
   <SiteLayout>
