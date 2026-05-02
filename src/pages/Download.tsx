@@ -13,7 +13,7 @@ const Download = () => (
         <p className="text-primary font-semibold uppercase tracking-widest text-xs mb-4">Download</p>
         <h1 className="font-display text-5xl md:text-7xl leading-[1.05]">Pull up a chair. <br /><span className="text-ember">It's free.</span></h1>
         <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Fishy Business open beta is available now for Windows. Mac and Linux builds are on the roadmap.
+          Fishy Business open beta is available now for Windows.
         </p>
       </div>
     </section>

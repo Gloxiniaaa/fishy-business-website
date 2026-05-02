@@ -25,7 +25,7 @@ const About = () => (
     <section className="container py-12 max-w-3xl">
       <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
         <p>
-          We grew up loving Saboteur — the German card game where friends quietly stab each other in the back over a fictional treasure. We also fell in love with the chaotic, bouncy, voice-chat anarchy of Party Animals.
+          We happend to know Saboteur - the German card game where friends quietly stab each other in the back over a fictional treasure. We also fell in love with the chaotic, bouncy, voice-chat anarchy of Party Animals.
         </p>
         <p>
           Our thesis question: <span className="text-accent">what happens when you fuse the two?</span> What if the cards lived on a real 3D table, in a warm wooden cabin, and the players could actually walk around, whisper, and make faces at each other?

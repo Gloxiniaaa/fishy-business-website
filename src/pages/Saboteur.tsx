@@ -119,8 +119,7 @@ const PageHero = () => (
         How to play <span className="text-ember">Saboteur</span>
       </h1>
       <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-        A 3D social-deduction tunnel-building party game for 3–10 friends. Built on the
-        time-tested Saboteur ruleset — this is the complete reference you'll come back to mid-argument.
+        A 3D social-deduction tunnel-building party game for 3–10 friends. This is the complete reference you'll come back to mid-argument.
       </p>
 
       <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">

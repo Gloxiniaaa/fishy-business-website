@@ -42,7 +42,7 @@ export const SiteFooter = () => (
     <div className="ember-divider" />
     <div className="container py-6 flex flex-col md:flex-row gap-3 items-center justify-between text-xs text-muted-foreground">
       <p>© {new Date().getFullYear()} Fishy Business. A graduation thesis project. All shenanigans reserved.</p>
-      <p>Built with Unity · Mirror Networking · Steam Audio</p>
+      <p>Built with Unity · Netcode · Vivox · and Coffee </p>
     </div>
   </footer>
 );

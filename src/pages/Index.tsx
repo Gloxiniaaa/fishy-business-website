@@ -137,10 +137,10 @@ const Index = () => {
             {[
               { icon: Users, title: "Multiplayer Chaos", desc: "3–8 players around the same wooden table. Shenanigans guaranteed." },
               { icon: Eye, title: "Hidden Roles", desc: "Diggers, saboteurs, and the occasional secret traitor. Find out who's lying." },
-              { icon: Vote, title: "Day & Night Voting", desc: "Argue in daylight, accuse at night. Eject the suspect — or the wrong friend." },
+              { icon: Vote, title: "Day & Night Voting", desc: "Chaos happing in the dark will surpise you all when the light comes." },
               { icon: MessageSquare, title: "Voice Chat - Text chat", desc: "Chat, whisper deals, shout accusations. Real voices, real betrayal." },
-              { icon: Sparkles, title: "Emotes & Avatars", desc: "Dance, laugh, point fingers. Customize a character that's unmistakably you." },
-              { icon: Music, title: "Mini Activities", desc: "Play piano, sit at the bar, fish off the dock between rounds." },
+              { icon: Sparkles, title: "Emotes & Avatars", desc: "Dance, laugh, even beg. Customize a character that's unmistakably you." },
+              { icon: Music, title: "Mini Activities", desc: "Play piano, sit on the chair, run around." },
             ].map((f, i) => (
               <div
                 key={i}
@@ -175,7 +175,7 @@ const Index = () => {
             </div>
             <div className="p-8">
               <h3 className="font-display text-3xl mb-3">Classic Mode</h3>
-              <p className="text-muted-foreground mb-5">Pure path-building strategy. Race to the treasure while saboteurs quietly torch the plan. The original Fishy Business experience.</p>
+              <p className="text-muted-foreground mb-5">Pure path-building strategy. Race to the treasure while saboteurs quietly torch the plan. The original Saboteur experience.</p>
               <Link to="/modes" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
                 Learn the rules <ArrowRight className="w-4 h-4" />
               </Link>
@@ -191,7 +191,7 @@ const Index = () => {
             </div>
             <div className="p-8">
               <h3 className="font-display text-3xl mb-3">Day & Night Mode</h3>
-              <p className="text-muted-foreground mb-5">Discuss by day. Vote at night. Accuse, defend, banish. Social deduction layered on top of the card game — pure chaos.</p>
+              <p className="text-muted-foreground mb-5">Take action at night. Discuss, vote by day. Accuse, defend, banish. Social deduction layered on top of the card game — pure chaos.</p>
               <Link to="/modes" className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all">
                 See how it works <ArrowRight className="w-4 h-4" />
               </Link>
@@ -252,9 +252,9 @@ const Index = () => {
               <Button asChild variant="ember" size="xl">
                 <Link to="/download"><Download /> Download for Windows</Link>
               </Button>
-              <Button asChild variant="cabin" size="xl">
+              {/* <Button asChild variant="cabin" size="xl">
                 <a href="#"><MessageSquare /> Join Discord</a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

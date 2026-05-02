@@ -26,7 +26,7 @@ const Modes = () => (
         </div>
         <div>
           <h2 className="font-display text-4xl md:text-6xl mb-5">Classic</h2>
-          <p className="text-lg text-muted-foreground mb-8">The original Fishy Business. Pure card-based path building, hidden roles, and quiet sabotage. Ideal for 4–6 players who like their lying contained.</p>
+          <p className="text-lg text-muted-foreground mb-8">The original Fishy Business. Pure card-based path building, hidden roles, and quiet sabotage.</p>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { icon: Users, label: "Players", value: "3 – 8" },
@@ -56,12 +56,12 @@ const Modes = () => (
         </div>
         <div className="lg:order-1">
           <h2 className="font-display text-4xl md:text-6xl mb-5">Day & Night</h2>
-          <p className="text-lg text-muted-foreground mb-8">All the chaos of Classic, plus rotating Day and Night phases. Argue, accuse, and vote suspects out of the round. Get it wrong and you might just hand the win to the saboteurs.</p>
+          <p className="text-lg text-muted-foreground mb-8">All the chaos of Classic, plus rotating Day and Night phases. Argue, accuse, and vote suspects out of next turn. Get it wrong and you might just hand the win to the saboteurs.</p>
 
           <div className="space-y-3">
             <PhaseCard icon={Sun} color="primary" title="Day Phase" desc="2 minutes of open discussion. Trade theories, defend yourself, build a case." />
             <PhaseCard icon={Vote} color="accent" title="Vote Phase" desc="Each player anonymously casts a suspicion. Majority kicks one player out for the night." />
-            <PhaseCard icon={Moon} color="destructive" title="Night Phase" desc="Saboteurs act in secret. Diggers brace. Day breaks again — and the bodies pile up." />
+            <PhaseCard icon={Moon} color="destructive" title="Night Phase" desc="All players act in secret. Day breaks again, and the bodies pile up." />
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ const Modes = () => (
       <div className="rounded-3xl bg-cabin border border-border p-10 md:p-14 text-center">
         <MessageSquare className="w-10 h-10 text-primary mx-auto mb-5" />
         <h2 className="font-display text-3xl md:text-5xl">More modes <span className="text-ember">coming soon</span></h2>
-        <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">Ranked, Speed Run, Couch Co-op LAN, and a custom rules sandbox are all on the roadmap. Vote on the next mode in our Discord.</p>
+        {/* <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">Ranked, Speed Run, Couch Co-op LAN, and a custom rules sandbox are all on the roadmap. Vote on the next mode in our Discord.</p> */}
       </div>
     </section>
   </SiteLayout>
