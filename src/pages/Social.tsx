@@ -5,6 +5,8 @@ import avatars from "@/assets/avatars.png";
 import emotes from "@/assets/emotes.png";
 import chrismas from "@/assets/chrismas.png";
 import ship from "@/assets/battle-ship.png";
+import playground from "@/assets/playground.png";
+
 
 
 const Social = () => (
@@ -90,13 +92,25 @@ const Social = () => (
       </div>
     </section>
 
-        <section className="container pb-20">
+    <section className="container pb-20">
       <div className="rounded-3xl overflow-hidden relative">
         <img src={ship} alt="Emotes party" loading="lazy" className="w-full max-h-[400px] object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent flex items-center">
           <div className="container max-w-xl">
             <h3 className="font-display text-3xl md:text-5xl  ">Battle <span className="text-ember">Ship</span></h3>
             <p className="mt-4 text-muted-foreground">Or do you want to play boardgames amongst the breezes of the sea</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="container pb-20">
+      <div className="rounded-3xl overflow-hidden relative">
+        <img src={playground} alt="Emotes party" loading="lazy" className="w-full max-h-[400px] object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent flex items-center">
+          <div className="container max-w-xl">
+            <h3 className="font-display text-3xl md:text-5xl  ">Play<span className="text-ember">ground</span></h3>
+            <p className="mt-4 text-muted-foreground">Play in a fun, casual environment with friends</p>
           </div>
         </div>
       </div>

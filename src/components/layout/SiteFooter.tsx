@@ -15,9 +15,9 @@ export const SiteFooter = () => (
           A 3D social deduction party game. Build the path, sabotage your friends, and trust absolutely no one around the cabin table.
         </p>
         <div className="flex gap-3 mt-6">
-          <a href="#" className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center" aria-label="Discord"><MessageCircle className="w-5 h-5" /></a>
-          <a href="#" className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center" aria-label="Twitter"><Twitter className="w-5 h-5" /></a>
-          <a href="#" className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center" aria-label="GitHub"><Github className="w-5 h-5" /></a>
+          {/* <a href="#" className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center" aria-label="Discord"><MessageCircle className="w-5 h-5" /></a> */}
+          {/* <a href="#" className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center" aria-label="Twitter"><Twitter className="w-5 h-5" /></a> */}
+          <a href="https://github.com/LeHien6601/Fishy-Business" target="_blank" className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center" aria-label="GitHub"><Github className="w-5 h-5" /></a>
         </div>
       </div>
       <div>
