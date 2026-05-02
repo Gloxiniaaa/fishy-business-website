@@ -276,28 +276,11 @@ const Setup = () => (
         <Mountain className="w-5 h-5 text-accent" />
         <h4 className="font-display text-xl">Starting board layout</h4>
       </div>
-      <div className="flex items-center justify-between gap-2 md:gap-4 overflow-x-auto pb-2">
-        <div className="shrink-0 w-20 h-28 md:w-24 md:h-32 rounded-xl bg-success/15 border-2 border-success/50 flex flex-col items-center justify-center text-success">
-          <Flag className="w-6 h-6 mb-1" />
-          <span className="text-xs font-bold">START</span>
-        </div>
-        <div className="flex-1 flex items-center justify-center gap-1 min-w-[200px]">
-          {Array.from({ length: 7 }).map((_, i) => (
-            <div key={i} className="w-6 h-10 md:w-8 md:h-14 rounded-md border border-dashed border-border/60 bg-muted/30" />
-          ))}
-        </div>
-        <div className="shrink-0 flex flex-col gap-2">
-          {[0, 1, 2].map((i) => (
-            <div
-              key={i}
-              className="w-20 h-8 md:w-24 md:h-9 rounded-lg bg-accent/15 border-2 border-accent/40 flex items-center justify-center text-accent gap-1.5"
-            >
-              <HelpCircle className="w-3.5 h-3.5" />
-              <span className="text-[10px] font-bold uppercase tracking-wider">Goal {i + 1}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+      <img
+        src="/src/assets/board-layout.png"
+        alt="Starting board layout showing 7-card gap between Start and three face-down Goal cards"
+        className="w-full h-auto rounded-lg"
+      />
       <p className="mt-5 text-xs text-muted-foreground text-center">
         7-card gap between Start (left) and the three face-down Goal cards (right). One Goal hides treasure.
       </p>
