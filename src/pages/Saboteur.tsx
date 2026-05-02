@@ -39,6 +39,7 @@ import {
 } from "@/components/ui/tooltip";
 import board from "@/assets/board.png";
 import actionCards from "@/assets/action-cards.png";
+import boardLayout from "@/assets/board-layout.png";
 
 /* ----------------------------- Reusable bits ----------------------------- */
 
@@ -277,7 +278,7 @@ const Setup = () => (
         <h4 className="font-display text-xl">Starting board layout</h4>
       </div>
       <img
-        src="/src/assets/board-layout.png"
+        src={boardLayout}
         alt="Starting board layout showing 7-card gap between Start and three face-down Goal cards"
         className="w-full h-auto rounded-lg"
       />
