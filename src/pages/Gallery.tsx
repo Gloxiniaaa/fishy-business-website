@@ -39,7 +39,7 @@ const Gallery = () => (
         <p className="text-accent font-semibold uppercase tracking-widest text-xs mb-4">Media & Gallery</p>
         <h1 className="font-display text-5xl md:text-7xl leading-[1.05]">See it in <span className="text-gold">action</span></h1>
         <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Screenshots from the open beta — captured directly from gameplay. Click any tile to view full size.
+          Screenshots from the open beta — captured directly from gameplay.
         </p>
       </div>
     </section>
